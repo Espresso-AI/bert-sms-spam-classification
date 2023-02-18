@@ -1,8 +1,7 @@
 # Acc: 99.61, f1 score | ham: 99.77, f1 score | spam: 98.65 for SMS Spam Collection Dataset  
 
 
-This repo is the original code of a [Kaggle notebook](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) for [SMS Spam Collection Dataset](https://www.kaggle.com/code/hotcouscous/acc-99-61-ham-spam-f1-score-99-77-98-65).  
-What you can additionally do on this code;  
+This repo is the original code of a [Kaggle notebook](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) for [SMS Spam Collection Dataset](https://www.kaggle.com/code/hotcouscous/acc-99-61-ham-spam-f1-score-99-77-98-65). What you can additionally do on this code;  
 1. manage arguments, callbacks, and other various features of pl.Trainer with a single yaml file
 2. configure all the hyperparameters of an experiment with a single yaml file
 3. check the past config through logs of hydra 
