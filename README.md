@@ -15,9 +15,9 @@ What you can additionally do on this code;
 |spam|98.65|-|
 |total|99.61|99.61|
 
-This code recorded an accuracy = 99.61%, f1 score | ham = 99.77%, and f1 score | spam = 98.65% on 517 samples selected as 10% of the entire dataset. The validation dataset is randomly sampled each time the training runs and it does not involve in the model's learning.  
+The model is tested on 517 samples selected as 10% of the entire dataset. The validation dataset is randomly sampled each time the training runs and it does not involve in the model's learning.  
 
-As an objective loss, I adopted focal loss to deal with positive/negative imbalance. Instead of following the paper, I implemented it in the form of multi-class classification, which makes training more stable. In addition, for better stability of training, I adopted regularization by AdamW, warmup start, and linear-decreasing lr scheduler.  
+As an objective loss, I adopted focal loss to deal with positive/negative imbalance. Instead of following the paper, I implemented it in the form of multi-class classification, which makes training more stable. In addition, for better stability of training, I adopted regularization by AdamW, warmup start, and linear-decreasing lr scheduler.    
 
 To train the model, after configure pl.Trainer and the experiment, run the command line;  
 ```
