@@ -1,4 +1,4 @@
-# Acc: 99.61, ham F1 score: 99.77, spam F1 score: 98.65 for SMS Spam Collection Dataset  
+# Acc : 99.61 | ham F1 score : 99.77 | spam F1 score : 98.65 for SMS Spam Collection Dataset  
 
 This repo is the original code of a [Kaggle notebook](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) for [SMS Spam Collection Dataset](https://www.kaggle.com/code/hotcouscous/acc-99-61-ham-spam-f1-score-99-77-98-65).  
 What you can additionally do on this code;  
