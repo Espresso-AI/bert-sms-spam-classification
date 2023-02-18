@@ -13,7 +13,7 @@ This code recorded an accuracy = 99.61%, f1 score | ham = 99.77%, and f1 score |
 <img src="https://github.com/Espresso-AI/bert-sms-spam-classification/blob/main/data/result.png" width="600" height="150">
 
 As an objective loss, I adopted focal loss to deal with positive/negative imbalance. Instead of following the paper, I implemented it in the form of multi-class classification, which makes training more stable. In addition, for better stability of training, I adopted regularization by AdamW, warmup start, and linear-decreasing lr scheduler.  
-<img src="https://github.com/Espresso-AI/bert-sms-spam-classification/blob/main/data/training_graph.png" width="1500" height="720">
+<img src="https://github.com/Espresso-AI/bert-sms-spam-classification/blob/main/data/training_graph.png" width="1000" height="400">
 
 To train the model, after configure pl.Trainer and the experiment, run the command line;  
 ```python train.py —config-name exp_0```
