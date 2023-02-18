@@ -10,10 +10,10 @@ What you can additionally do on this code;
   
 ## Result
 ||F1 score|Accuracy| 
-|-|-|-|
-|ham|99.77||
-|spam|98.65||
-|||99.61|
+|---|---|---|
+|ham|99.77|-|
+|spam|98.65|-|
+|total|99.61|99.61|
 
 This code recorded an accuracy = 99.61%, f1 score | ham = 99.77%, and f1 score | spam = 98.65% on 517 samples selected as 10% of the entire dataset. The validation dataset is randomly sampled each time the training runs and it does not involve in the model's learning.  
 
