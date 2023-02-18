@@ -14,10 +14,14 @@ This code recorded an accuracy = 99.61%, f1 score | ham = 99.77%, and f1 score |
 As an objective loss, I adopted focal loss to deal with positive/negative imbalance. Instead of following the paper, I implemented it in the form of multi-class classification, which makes training more stable. In addition, for better stability of training, I adopted regularization by AdamW, warmup start, and linear-decreasing lr scheduler.  
 
 To train the model, after configure pl.Trainer and the experiment, run the command line;  
-```python train.py —config-name exp_0```
+```
+python train.py —config-name exp_0
+```
 
 If you want to test the checkpoints, enter checkpoints file path on exp_0.yaml and run the command line;  
-```python test.py —config-name exp_0```
+```
+python test.py —config-name exp_0
+```
 
 ## License
 BSD 3-Clause License Copyright (c) 2022, Kwon Taewan
