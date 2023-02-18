@@ -19,6 +19,7 @@ The model is tested on 517 samples selected as 10% of the entire dataset. The va
 
 As an objective loss, I adopted focal loss to deal with positive/negative imbalance. Instead of following the paper, I implemented it in the form of multi-class classification, which makes training more stable. In addition, for better stability of training, I adopted regularization by AdamW, warmup start, and linear-decreasing lr scheduler.    
 
+## Usage
 To train the model on this repo, run the command line;  
 ```
 python train.py —config-name exp_0
