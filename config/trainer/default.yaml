@@ -1,0 +1,28 @@
+
+Trainer:
+  accelerator: gpu
+  devices: 1
+  max_epochs: 10
+  accumulate_grad_batches: 1
+  gradient_clip_val: 1.0
+  log_every_n_steps: 5
+
+
+Callbacks:
+  LearningRateMonitor:
+    logging_interval: step
+
+  EarlyStopping:
+    monitor: val_acc
+    patience: 5
+
+  ModelCheckpoint:
+    save_top_k: 3
+    monitor: val_acc
+    mode: max
+    dirpath: checkpoints/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+
+Profiler:
+  SimpleProfiler:
+

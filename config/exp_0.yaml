@@ -1,0 +1,37 @@
+hydra:
+  run:
+    dir: ./log/hydra/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+defaults:
+  - _self_
+  - dataset: spam
+  - trainer: default
+
+
+ckpt_path: # checkpoints/2023-02-16/13-02-51/epoch=5-step=438.ckpt
+
+base_checkpoint: bert-base-uncased
+classifier_dropout: 0.1
+
+max_seq_len: 64
+batch_size: 64
+
+loss:
+  alpha: 0.25
+  gamma: 2.0
+  average: True
+
+engine:
+  ckpt_path:            # load only the model's checkpoints from the entire
+  freeze_base: False
+  lr: 0.00005
+  weight_decay: 0.0001
+  num_warmup_steps: 4
+  num_training_steps: ${trainer.Trainer.max_epochs}
+  lr_init_eps: 0.1
+  save_result: False
+
+log:
+  project: Ham_Spam
+  name: exp_0--${now:%Y-%m-%d}/${now:%H-%M-%S}
+  save_dir: ./log
