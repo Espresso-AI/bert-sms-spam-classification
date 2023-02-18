@@ -10,10 +10,10 @@ What you can additionally do on this code;
 ***
 
 This code recorded an accuracy = 99.61%, f1 score | ham = 99.77%, and f1 score | spam = 98.65% on 517 samples selected as 10% of the entire dataset. The validation dataset is randomly sampled each time the training runs and it does not involve in the model's learning.  
-<img src="https://github.com/Espresso-AI/bert-sms-spam-classification/blob/main/data/result.png" width="200" height="50">
+<img src="https://github.com/Espresso-AI/bert-sms-spam-classification/blob/main/data/result.png" width="600" height="150">
 
 As an objective loss, I adopted focal loss to deal with positive/negative imbalance. Instead of following the paper, I implemented it in the form of multi-class classification, which makes training more stable. In addition, for better stability of training, I adopted regularization by AdamW, warmup start, and linear-decreasing lr scheduler.  
-<img src="https://github.com/Espresso-AI/bert-sms-spam-classification/blob/main/data/training_graph.png" width="500" height="240">
+<img src="https://github.com/Espresso-AI/bert-sms-spam-classification/blob/main/data/training_graph.png" width="1500" height="720">
 
 To train the model, after configure pl.Trainer and the experiment, run the command line;  
 ```python train.py —config-name exp_0```
