@@ -31,4 +31,4 @@ python test.py —config-name exp_0
 ```
 
 ## License
-BSD 3-Clause License Copyright (c) 2022, Kwon Taewan
+BSD 3-Clause License Copyright (c) 2022
